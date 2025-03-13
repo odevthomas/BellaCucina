@@ -1,137 +1,128 @@
-# Bella Cucina - Restaurant Management System
+# Bella Cucina - Sistema de Gestão de Restaurantes
+![Redes Pets (1)](https://github.com/user-attachments/assets/4a209a2b-c892-4a38-94a9-7df5aada1bbd)
 
-![Bella Cucina](https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80)
 
-A versatile, responsive restaurant management system adaptable to various restaurant types that enhances both customer experience and operational efficiency.
+Um sistema de gestão de restaurantes versátil e responsivo, adaptável a diferentes tipos de restaurantes, que melhora tanto a experiência do cliente quanto a eficiência operacional.
 
-## 🍽️ Features
+## 🍽️ Funcionalidades
 
-- **Interactive Menu**: Digital menu with high-quality food photos in a carousel display, detailed descriptions, and filtering options by category
-- **Table Self-Ordering**: QR code-based system allowing customers to browse menu and place orders directly from their table without waiter assistance
-- **Reservation System**: Online booking interface with calendar view, time slot selection, and party size options
-- **Responsive Design**: Fully adaptive layout that works seamlessly across mobile, tablet and desktop devices
-- **Restaurant Customization**: Easily configurable theme, colors, and content to match any restaurant's branding
+- **Menu Interativo**: Menu digital com fotos de alta qualidade dos pratos em um carrossel, descrições detalhadas e opções de filtro por categoria
+- **Pedidos Self-Service**: Sistema baseado em QR code que permite aos clientes visualizar o menu e fazer pedidos diretamente da mesa sem a ajuda do garçom
+- **Sistema de Reservas**: Interface de reservas online com visualização de calendário, seleção de horários e opções de tamanho de grupo
+- **Design Responsivo**: Layout totalmente adaptativo que funciona de maneira fluida em dispositivos móveis, tablets e desktops
+- **Customização do Restaurante**: Tema, cores e conteúdo facilmente configuráveis para combinar com a identidade visual de qualquer restaurante
 
-## 🚀 Live Demo
+## 🚀 Demo ao Vivo
 
-Explore the live demo: [Bella Cucina Demo](https://pensive-hertz4-dmljl.dev-2.tempolabs.ai)
+Explore a demo ao vivo: [Demo Bella Cucina](https://pensive-hertz4-dmljl.dev-2.tempolabs.ai)
 
-## 📱 Screenshots
+## 📱 Capturas de Tela
 
-### Home Page
-![Home Page](https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80)
+### Página Inicial
 
-### Menu Section
-![Menu](https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80)
+### Seção do Menu
 
-### Reservation System
-![Reservation](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80)
+### Sistema de Reservas
 
-## 🛠️ Technologies Used
+## 🛠️ Tecnologias Utilizadas
 
 - **Frontend**: React, TypeScript, Vite
-- **Styling**: Tailwind CSS, ShadCN UI
-- **State Management**: React Context API
-- **Form Handling**: React Hook Form, Zod
-- **UI Components**: Radix UI, Lucide React icons
-- **Date Handling**: date-fns
+- **Estilo**: Tailwind CSS, ShadCN UI
+- **Gerenciamento de Estado**: React Context API
+- **Manipulação de Formulários**: React Hook Form, Zod
+- **Componentes de UI**: Radix UI, Ícones Lucide React
+- **Manipulação de Datas**: date-fns
 
-## 🏗️ Project Structure
+## 🏗️ Estrutura do Projeto
 
 ```
 src/
 ├── components/
-│   ├── cart/           # Cart functionality components
-│   ├── home/           # Homepage components
-│   ├── layout/         # Layout components (Header, Footer)
-│   ├── menu/           # Menu display components
-│   ├── reservation/    # Reservation system components
-│   ├── ui/             # Reusable UI components (ShadCN)
-│   └── waiter/         # Waiter panel components
-├── lib/                # Utility functions and services
-└── types/              # TypeScript type definitions
+│   ├── cart/           # Componentes da funcionalidade do carrinho
+│   ├── home/           # Componentes da página inicial
+│   ├── layout/         # Componentes de layout (Cabeçalho, Rodapé)
+│   ├── menu/           # Componentes de exibição do menu
+│   ├── reservation/    # Componentes do sistema de reservas
+│   ├── ui/             # Componentes UI reutilizáveis (ShadCN)
+│   └── waiter/         # Componentes do painel do garçom
+├── lib/                # Funções e serviços utilitários
+└── types/              # Definições de tipos TypeScript
 ```
 
-## 🔧 Installation & Setup
+## 🔧 Instalação & Configuração
 
-1. **Clone the repository**
+1. **Clone o repositório**
    ```bash
-   git clone https://github.com/yourusername/bella-cucina.git
+   git clone https://github.com/seunome/bella-cucina.git
    cd bella-cucina
    ```
 
-2. **Install dependencies**
+2. **Instale as dependências**
    ```bash
    npm install
    ```
 
-3. **Start the development server**
+3. **Inicie o servidor de desenvolvimento**
    ```bash
    npm run dev
    ```
 
-4. **Build for production**
+4. **Construa para produção**
    ```bash
    npm run build
    ```
 
-## 🧩 Core Components
+## 🧩 Componentes Principais
 
-### Customer-Facing Features
+### Funcionalidades para o Cliente
 
-- **Interactive Menu**: Browse, filter, and search through the restaurant's offerings with detailed descriptions and high-quality images
-- **Cart System**: Add items to cart, customize with special requests, and place orders directly from the table
-- **Reservation System**: Book tables with an intuitive date and time picker, specify party size, and receive confirmation
+- **Menu Interativo**: Navegue, filtre e pesquise pelos itens do menu do restaurante com descrições detalhadas e imagens de alta qualidade
+- **Sistema de Carrinho**: Adicione itens ao carrinho, personalize com solicitações especiais e faça pedidos diretamente da mesa
+- **Sistema de Reservas**: Reserve mesas com um seletor intuitivo de data e horário, especifique o tamanho do grupo e receba confirmação
 
-### Restaurant Management Features
+### Funcionalidades para o Restaurante
 
-- **Waiter Panel**: View and manage incoming orders, update order status, and handle special requests
-- **Menu Management**: Easily update menu items, prices, and availability
-- **Reservation Management**: View and manage upcoming reservations
+- **Painel do Garçom**: Visualize e gerencie os pedidos recebidos, atualize o status dos pedidos e gerencie solicitações especiais
+- **Gestão do Menu**: Atualize facilmente os itens do menu, preços e disponibilidade
+- **Gestão de Reservas**: Visualize e gerencie as reservas futuras
 
-## 🔄 Workflow
+## 🔄 Fluxo de Trabalho
 
-1. **Customer Experience**:
-   - Scan QR code at table or visit website
-   - Browse digital menu with filtering options
-   - Add items to cart with customization options
-   - Submit order directly from device
-   - Receive order confirmation
+1. **Experiência do Cliente**:
+   - Escaneie o QR code na mesa ou acesse o site
+   - Navegue pelo menu digital com opções de filtro
+   - Adicione itens ao carrinho com opções de personalização
+   - Envie o pedido diretamente do dispositivo
+   - Receba a confirmação do pedido
 
-2. **Restaurant Operations**:
-   - Receive incoming orders through waiter panel
-   - Update order status (pending, preparing, ready, delivered)
-   - Manage reservations and table assignments
-   - Process payments and track orders
+2. **Operações do Restaurante**:
+   - Receba pedidos no painel do garçom
+   - Atualize o status do pedido (pendente, preparando, pronto, entregue)
+   - Gerencie reservas e atribuição de mesas
+   - Processe pagamentos e acompanhe os pedidos
 
-## 🔒 Environment Variables
+## 🔒 Variáveis de Ambiente
 
-Create a `.env` file in the root directory with the following variables:
+Crie um arquivo `.env` no diretório raiz com as seguintes variáveis:
 
 ```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_SUPABASE_URL=sua_url_do_supabase
+VITE_SUPABASE_ANON_KEY=sua_chave_anonima_do_supabase
 VITE_BASE_PATH=/
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Faça um fork do repositório
+2. Crie sua branch de funcionalidade (`git checkout -b feature/minha-nova-funcionalidade`)
+3. Faça commit das suas mudanças (`git commit -m 'Adiciona nova funcionalidade incrível'`)
+4. Faça push para a branch (`git push origin feature/minha-nova-funcionalidade`)
+5. Abra um Pull Request
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Contact
-
-For any inquiries or support, please contact:
-- Email: contact@bellacucina.com
-- Website: [bellacucina.com](https://bellacucina.com)
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
 
 ---
 
-Built with ❤️ by [Your Name/Team]
+Construído com ❤️ por [@odevthomas]
