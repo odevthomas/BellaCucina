@@ -117,7 +117,7 @@ const MenuSection = ({
         "Pão artesanal assado na hora em forno a lenha, coberto com manteiga composta de alho assado, azeite extra virgem e mix de ervas frescas (tomilho, alecrim e salsinha). Servido quente com crosta crocante e interior macio.",
       price: 19.9,
       image:
-        "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=600&q=75",
+        "/Comidas/Pão de Alho.jpg",
       category: "Entradas",
       featured: false,
     },
@@ -139,7 +139,7 @@ const MenuSection = ({
         "Coquetel brasileiro tradicional preparado com cachaça artesanal envelhecida em barril de carvalho, limão tahiti orgânico macerado, açúcar de cana orgânico e gelo cristalino. Servida em copo old-fashioned com borda de açúcar e decorada com fatia de limão caramelizado.",
       price: 22.9,
       image:
-        "https://images.unsplash.com/photo-1613825787641-1de4d1b8dd33?w=600&q=75",
+        "/Bebidas/Caipirinha Premium.jpg",
       category: "Bebidas",
       featured: true,
     },

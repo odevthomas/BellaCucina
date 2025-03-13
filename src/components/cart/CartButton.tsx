@@ -26,20 +26,20 @@ const CartButton: React.FC<CartButtonProps> = ({
 
   return (
     <>
-      <Button
-        variant={variant}
-        size={size}
-        onClick={() => setIsCartOpen(true)}
-        className={`relative ${className}`}
-      >
-        <ShoppingCart className="h-5 w-5 mr-2" />
-        Carrinho
-        {totalItems > 0 && (
-          <span className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-            {totalItems}
-          </span>
-        )}
-      </Button>
+    <Button
+  variant={variant}
+  size={size}
+  onClick={() => setIsCartOpen(true)}
+  className={`relative ${className}`}
+>
+  <ShoppingCart className="h-5 w-5 text-white mr-2" />
+  {totalItems > 0 && (
+    <span className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+      {totalItems}
+    </span>
+  )}
+</Button>
+
 
       <CartModal open={isCartOpen} onOpenChange={setIsCartOpen} />
     </>

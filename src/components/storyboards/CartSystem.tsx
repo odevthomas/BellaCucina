@@ -15,7 +15,7 @@ const CartSystemDemo = () => {
       "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&q=75",
     category: "Pizza",
   };
-
+   
   return (
     <CartProvider>
       <div className="p-8 bg-gray-100 min-h-screen">

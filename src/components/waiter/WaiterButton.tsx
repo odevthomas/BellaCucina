@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { UserRound } from "lucide-react";
+import { FaClipboardList } from "react-icons/fa"; // Agora a importação deve funcionar corretamente
 import { Button } from "@/components/ui/button";
 import WaiterPanel from "./WaiterPanel";
 
@@ -30,8 +30,7 @@ const WaiterButton: React.FC<WaiterButtonProps> = ({
         onClick={() => setIsPanelOpen(true)}
         className={className}
       >
-        <UserRound className="h-5 w-5 mr-2" />
-        Área do Garçom
+        <FaClipboardList className="h-10 w-10 mr-2" /> {/* Novo ícone */}
       </Button>
 
       <WaiterPanel open={isPanelOpen} onOpenChange={setIsPanelOpen} />
